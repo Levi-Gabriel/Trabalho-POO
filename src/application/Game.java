@@ -10,7 +10,6 @@ import world.Map;
 import world.Room;
 import character.Hero;
 import character.Monster;
-import character.Character;
 
 public class Game {
 
@@ -61,8 +60,7 @@ public class Game {
         }
 
         if (!hero.isAlive()) {
-            System.out.println("\nFim de jogo."
-                    + Character.getTotalChar());
+            System.out.println("\nFim de jogo.");
         }
 
         scanner.close();
@@ -75,7 +73,7 @@ public class Game {
         }
 
         if (action.startsWith("mover")) {
-            mover(action);
+            move(action);
         } else if (action.equals("inventario")) {
             hero.getInventory().listItems();
         } else if (action.equals("usar")) {
@@ -90,7 +88,7 @@ public class Game {
         return true;
     }
 
-    private void mover(String comando) {
+    private void move(String comando) {
         String[] paths = comando.split(" ");
         if (paths.length < 2) {
             System.out.println("Use: mover <leste|oeste>");
@@ -101,7 +99,7 @@ public class Game {
             System.out.println("Direção inválida.");
             return;
         }
-        Room destination = actualRoom.getpaths(direction);
+        Room destination = actualRoom.getPaths(direction);
         if (destination == null) {
             System.out.println("Não há saída nessa direção.");
             return;

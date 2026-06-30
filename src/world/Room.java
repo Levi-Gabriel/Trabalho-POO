@@ -32,11 +32,11 @@ public class Room {
         this.paths.put(direction, destination);
     }
 
-    public Room getpaths(Direction direction) {
+    public Room getPaths(Direction direction) {
         return this.paths.get(direction);
     }
 
-    public Map<Direction, Room> getSaidas() {
+    public Map<Direction, Room> getPaths() {
         return this.paths;
     }
 

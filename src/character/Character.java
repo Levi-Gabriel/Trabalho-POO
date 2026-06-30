@@ -1,6 +1,6 @@
 package character;
 
-public abstract class Character implements Attackable {
+public abstract class Character {
 
     private static int totalChar = 0;
     protected String name;
@@ -60,7 +60,8 @@ public abstract class Character implements Attackable {
         return this.name + " agora está com" + this.life + "/" + maxLife;
     }
 
-
+    public void attack(Character target) {};
+    
     protected String boostAttack(int boost) {
         this.attack += boost;
         return "O ataque de " + this.name + " passou a ser " + this.attack;
