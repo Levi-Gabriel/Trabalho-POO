@@ -1,0 +1,36 @@
+# ==========================================
+# Ignorar arquivos compilados do Java
+# ==========================================
+*.class
+*.jar
+
+# ==========================================
+# Ignorar pastas de compilação
+# ==========================================
+/bin/
+/build/
+/out/
+/target/
+
+# ==========================================
+# Ignorar configurações do Eclipse
+# ==========================================
+.metadata/
+.settings/
+.classpath
+.project
+
+# ==========================================
+# Ignorar arquivos de outras IDEs (Prevenção)
+# ==========================================
+.idea/
+*.iml
+.vscode/
+
+# ==========================================
+# Ignorar arquivos temporários do SO (Linux/Mac/Windows)
+# ==========================================
+*~
+*.swp
+.DS_Store
+Thumbs.db
