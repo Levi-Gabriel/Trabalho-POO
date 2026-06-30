@@ -6,7 +6,7 @@ public class Armor extends Item{
 	private final int defenseBonus;
 	
 	public Armor(String name, int defenseBonus) {
-        super(name, "Arma que concede +" + defenseBonus + " de ataque.");
+        super(name, "Armadura que concede +" + defenseBonus + " de defesa.");
         this.defenseBonus = defenseBonus;
 	}
 

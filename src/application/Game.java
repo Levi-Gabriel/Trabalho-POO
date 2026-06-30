@@ -111,7 +111,7 @@ public class Game {
             return;
         }
         actualRoom = destination;
-        actualRoom.isVisited();
+        actualRoom.roomVisited();
     }
 
     private void openChest() {
